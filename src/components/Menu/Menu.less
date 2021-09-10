@@ -1,0 +1,34 @@
+@import url('@/assets/less/viewports.less');
+
+.close-menu {
+	top: 20px;
+	right: 20px;
+}
+@media (max-width: @tablet-xs-width - 1px) {
+	.menu-wrapper {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 70%;
+		width: 100%;
+		height: 100vh;
+		padding: 0 10px;
+		z-index: 5;
+		background-color: rgba(0, 9, 48, 1);
+		&-active {
+			display: block;
+		}
+	}
+}
+@media (min-width: @tablet-xs-width) {
+	.menu-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		align-items: center;
+		gap: 5px;
+	}
+	.close-menu {
+		display: none;
+	}
+}

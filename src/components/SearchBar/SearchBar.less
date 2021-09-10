@@ -1,0 +1,46 @@
+@import url('@/assets/less/viewports.less');
+@import url('@/assets/less/font-size-px-to-em.less');
+
+.search-bar-field-wrap {
+	position: relative;
+	margin: 0;
+}
+.search-bar-field {
+	width: 100%;
+	padding: 5px;
+	padding-right: 30px;
+	border: none;
+	border-radius: 3px;
+	&::placeholder {
+		.font-size-px-to-em(14);
+	}
+	&-invalid {
+		background-color: rgb(255, 152, 152);
+	}
+}
+.search-bar-button {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.search-bar-icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+@media (min-width: 650px) {
+	.search-bar-field {
+		padding: 7px;
+		padding-right: 30px;
+	}
+}
+@media (min-width: @tablet-lg-width) {
+	.search-bar-field-wrap {
+		max-width: 100%;
+	}
+}

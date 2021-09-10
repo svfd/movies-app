@@ -1,0 +1,43 @@
+@import url('@/assets/less/viewports.less');
+@import url('@/assets/less/font-size-px-to-em.less');
+
+.movie-review {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 10px;
+	padding-bottom: 20px;
+	background-color: rgba(3, 4, 8, 0.09);
+	border-radius: 20px;
+}
+.movie-review-author-data {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.movie-review-avatar {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #c1c1c1;
+	overflow: hidden;
+}
+.movie-review-timestamp {
+	display: block;
+	margin-bottom: 10px;
+	.font-size-px-to-em(10);
+	text-align: right;
+}
+.movie-review-content {
+	margin: 0;
+	padding-left: 15px;
+	color: #f1f1f1;
+	.font-size-px-to-em(14);
+	line-height: 1.4;
+	overflow-wrap: break-word;
+}
+@media (min-width: @tablet-lg-width) {
+	.movie-review-content {
+		.font-size-px-to-em(16);
+	}
+}

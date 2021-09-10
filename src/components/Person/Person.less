@@ -1,0 +1,68 @@
+@import url('@/assets/less/viewports.less');
+@import url('@/assets/less/font-size-px-to-em.less');
+
+.person-details-wrapper {
+	align-items: flex-start;
+}
+.person-details {
+	max-width: 295px;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.person-info-wrapper {
+	margin-bottom: 20px;
+	padding: 5%;
+}
+.person-img {
+	display: block;
+	width: 100%;
+}
+.person-name-wrap {
+	display: flex;
+	margin-bottom: 15px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+}
+.person-name {
+	margin: 0;
+	font-family: 'Play-Bold';
+	.font-size-px-to-em(16);
+}
+.person-birthdate {
+	margin: 0;
+	.font-size-px-to-em(12);
+}
+.person-biography {
+	margin: 0;
+	margin-bottom: 10px;
+	.font-size-px-to-em(13);
+	line-height: 1.4;
+	word-break: break-word;
+}
+.person-birth-place {
+	margin: 0;
+	margin-bottom: 5px;
+	.font-size-px-to-em(12);
+}
+.person-homepage {
+	.font-size-px-to-em(12);
+	color: #ffffff;
+}
+@media (min-width: @tablet-xs-width) {
+	.person-details-wrapper {
+		display: grid;
+		grid-template-columns: 32% 66.3%;
+		gap: 10px;
+	}
+	.person-info-wrapper {
+		margin-bottom: 0;
+	}
+}
+@media (min-width: @tablet-lg-width) {
+	.person-biography {
+		.font-size-px-to-em(14);
+	}
+}

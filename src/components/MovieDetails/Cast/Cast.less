@@ -1,0 +1,61 @@
+@import url('@/assets/less/font-size-px-to-em.less');
+
+.movie-actors-wrapper {
+	display: grid;
+	margin-bottom: 20px;
+	grid-template-columns: repeat(2, 47%);
+	gap: 10px;
+	justify-content: space-between;
+}
+.movie-actor {
+	position: relative;
+	display: flex;
+	max-width: 250px;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition-duration: 300ms;
+	&:hover {
+		transform: scale(1.015);
+	}
+}
+.movie-actor-data {
+	padding: 10px;
+}
+.movie-actor-name {
+	margin: 0;
+	margin-bottom: 10px;
+	.font-size-px-to-em(14);
+}
+.movie-actor-role {
+	margin: 0;
+	.font-size-px-to-em(12);
+	color: rgba(225, 75, 75, 1);
+}
+.movie-actor-link {
+	text-decoration: none;
+	color: #ffffff;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+@media (min-width: 460px) {
+	.movie-actors-wrapper {
+		grid-template-columns: repeat(3, 32%);
+	}
+}
+@media (min-width: 640px) {
+	.movie-actors-wrapper {
+		grid-template-columns: repeat(4, 24%);
+	}
+}
+@media (min-width: 840px) {
+	.movie-actors-wrapper {
+		grid-template-columns: repeat(5, 18%);
+	}
+}

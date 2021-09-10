@@ -1,0 +1,5 @@
+@import url('./font-sizes.less');
+
+.font-size-px-to-em(@size, @font-size: @default) {
+	font-size: (@size / unit(@font-size)) * 1em;
+}

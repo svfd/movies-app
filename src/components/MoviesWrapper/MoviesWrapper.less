@@ -1,0 +1,22 @@
+.movies-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 48%);
+	margin-bottom: 20px;
+	gap: 10px;
+	justify-content: space-between;
+}
+@media (min-width: 520px) {
+	.movies-wrapper {
+		grid-template-columns: repeat(3, 31.5%);
+	}
+}
+@media (min-width: 760px) {
+	.movies-wrapper {
+		grid-template-columns: repeat(4, 23.5%);
+	}
+}
+@media (min-width: 1080px) {
+	.movies-wrapper {
+		grid-template-columns: repeat(5, 18.5%);
+	}
+}

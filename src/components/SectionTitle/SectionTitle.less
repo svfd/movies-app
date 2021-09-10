@@ -1,0 +1,20 @@
+@import url('@/assets/less/viewports.less');
+@import url('@/assets/less/font-size-px-to-em.less');
+
+.section-title {
+	margin: 0;
+	margin-bottom: 20px;
+	font-family: 'MontserratAlternates-Regular';
+	.font-size-px-to-em(18);
+	text-align: center;
+}
+@media (min-width: @tablet-lg-width) {
+	.section-title {
+		.font-size-px-to-em(20);
+	}	
+}
+@media (min-width: @desktop-xs-width) {
+	.section-title {
+		.font-size-px-to-em(22);
+	}
+}

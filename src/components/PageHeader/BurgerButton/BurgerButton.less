@@ -1,0 +1,27 @@
+@import url('@/assets/less/viewports.less');
+
+.burger-button {
+	position: relative;
+	width: 25px;
+	height: 21px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #ffffff;
+		box-shadow: 0 9px 0 0 #ffffff,
+								0 18px 0 0 #ffffff;
+	}
+}
+@media (min-width: @tablet-xs-width) {
+	.burger-button {
+		display: none;
+	}
+}

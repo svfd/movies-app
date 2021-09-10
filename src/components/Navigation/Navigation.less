@@ -1,0 +1,38 @@
+@import url('@/assets/less/viewports.less');
+
+.navigation-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.navigation-link {
+	text-decoration: none;
+}
+@media (max-width: @tablet-xs-width - 1px) {
+	.navigation-list {
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	.navigation-item {
+		text-align: center;
+		border-bottom: 1px solid #ffffff;
+	}
+	.navigation-link {
+		display: block;
+		padding: 10px 0;
+		color: #ffffff;
+	}
+}
+@media (min-width: @tablet-xs-width) {
+	.navigation-list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.navigation-item {
+		margin-right: 10px;
+	}
+	.navigation-link {
+		color: #ffffff;
+	}
+}

@@ -1,0 +1,19 @@
+.pagination {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20px, max-content));
+	margin-bottom: 20px;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+.pagination-link {
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 3px;
+	border: 1px solid rgba(141, 123, 123, 0.7);
+	&-current {
+		opacity: 0.3;
+	}
+}
